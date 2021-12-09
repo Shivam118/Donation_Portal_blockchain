@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 const app = express();
 
 dotenv.config({path: './config.env'});
-const patient = require('./model/PatientSchema');
+const SignPatient = require('./model/SignPatient');
+const SignDonor = require('./model/SignDonor');
+const SignHospital = require('./model/SignHospital');
 
 const port = process.env.PORT;
 
